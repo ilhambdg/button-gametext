@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-kecil-adev</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <audio id="sound1">
+    <source src = "sound/button.mp3" type="audio/mp3">
+  </audio>
+  
+  <audio id="sound2" loop>
+    <source src = "sound/cave.wav" type="audio/wav">
+  </audio>
+
+  <audio id="soundTiga" autoplay loop>
+    <source src="sound/entry_sound.wav" type="audio/wav">
+  </audio>
+
+  <audio id="sound4">
+    <source src="sound/tombol_koin.wav" type="audio/wav">
+  </audio>
+
+    <div id="game">
+      <button id="tombolSuara" onclick="sound3()">:D</button>
+        <div id="stats">
+          <span class="stat">Level: <strong><span id="xpText">0</span></strong></span>
+          <span class="stat">Darah: <strong><span id="healthText">100</span></strong></span>
+          <span class="stat">Koin emas: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <div id="controls">
+          <button id="button1">pergi ke toko</button>
+          <button id="button2">pergi ke dungeon</button>
+          <button id="button3">bunuh naga!</button>
+        </div>
+        <div id="monsterStats">
+          <span class="stat">Nama monster: <strong><span id="monsterName"></span></strong></span>
+          <span class="stat">Darah: <strong><span id="monsterHealth"></span></strong></span>
+          <span class="stat">Level: <strong><span id="monsterLevel"></span></strong></span>
+        </div>
+        <div id="text">
+          Selamat datang di mini game Adev!!!. Kamu harus mengalahkan naga yang berada di pinggir kota, naga itu berbahaya!. Kamu sekarang berada di alun-alun kota. Jika ingin berpergian gunakan tombol di atas.
+        </div>
+      </div>
+    <script src="./script.js"></script>
+</body>
+</html>
